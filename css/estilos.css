@@ -3,26 +3,36 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 header {
     display: flex;
     justify-content: flex-start;
+    max-width: 1200px;
+    background-color: #477979;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.logo {
+    display: block;
+    max-width: 300px;
+    height: auto;
+    margin: 20px;
 }
 
 .cont-naveg {
-    /*background-color: #FFC55A;*/
+    background-color: #FFC55A;
     padding: 20px;
-    width: 90%;
     max-width: 1200px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    
 }
+
 .naveg {
     background-color: #FFC55A;
     width: 30%;
@@ -31,29 +41,31 @@ header {
     padding: 5px;
     text-align: center;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
 }
 
+.naveg:hover {
+    background-color: #ffbf47;
+}
+
 h1 {
-    color: orange;
+    color: #477979;
     font-size: 40px;
     margin: 20px;
+    text-align: center;
 }
 
 .cont-oficios {
     padding: 20px;
-    width: 90%;
-	max-width: 1200px;
+    max-width: 1200px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-
 }
 
 .oficios {
-    background-color: teal;
     color: white;
     border-radius: 8px;
     padding: 20px;
@@ -61,7 +73,7 @@ h1 {
     position: relative;
     overflow: hidden;
     background-size: cover;
-	background-position: center center;
+    background-position: center center;
 }
 
 .oficios p {
@@ -70,15 +82,27 @@ h1 {
 }
 
 .blur {
-    filter: blur(3px);
-  }
-  
-  .oficios:hover {
+    filter: blur(2px);
+}
+
+/*.oficios:hover {
     background-color: black;
-  }
+}*/
 
-@media screen and (max-width: 1200px) {}
+footer p {
+    background-color: #477979;
+    color: #FFC55A;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
 
-@media screen and (max-width: 900px) {}
-
-@media screen and (min-width: 600px) {}
+@media screen and (max-width: 600px) {
+    .naveg {
+        width: 100%;
+        height: 60px;
+        margin: 5px;
+    }
+}
