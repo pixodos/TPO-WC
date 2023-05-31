@@ -45,13 +45,18 @@ header {
     font-weight: bold;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 .naveg:hover {
     background-color: #f8af50;
 }
 
 h1 {
     color: #477979;
-    font-size: 40px;
+    font-size: 30px;
     margin: 20px;
     text-align: center;
 }
@@ -81,13 +86,6 @@ h1 {
     font-weight: bold;
 }
 
-.blur {
-    filter: blur(2px);
-}
-
-.oficios:hover {
-    background-color: black;
-}
 
 footer p {
     background-color: #477979;
