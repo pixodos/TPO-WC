@@ -75,13 +75,14 @@ h1 {
     color: #477979;
     font-size: 30px;
     margin: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .frame_video {
     margin: 20px;
     display: flex;
-
+    justify-content: space-evenly;
+    
 }
 
 .cont-oficios {
