@@ -26,8 +26,35 @@
 
 <body>
     <div class="contacto_prox">
-        <p class="parrafo_contacto">Proximamente...</p>
+        <p class="parrafo_contacto">Por favor, completá los datos a continuación y un profesional del rubro seleccionado se pondrá en contacto con vos.</p>
     </div>
+
+    <form action="https://formspree.io/f/xvonelaa" method="POST">
+        <label for="oficioSel">Oficio:</label>
+        <select id="oficioSel" name="oficioSel">
+            <option value="carpinteria">Carpintería</option>
+            <option value="electricidad">Electricidad</option>
+            <option value="plomeria">Plomería</option>
+            <option value="albanileria">Albañilería</option>
+            <option value="pintura">Pintura</option>
+            <option value="herreria">Herrería</option>
+        </select>
+        <label>
+            Tu nombre:
+            <input type="text" name="nombre" required>
+        </label>
+        <label>
+            Tu correo electrónico:
+            <input type="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        </label>
+        <label>
+            Tu consulta:
+            <textarea name="consulta" required oninput="validateInput(this)"></textarea>
+        </label>
+        <button type="submit">Enviar</button>
+    </form>
+    <script src="js/scriptform.js"></script>
+
 </body>
 <footer>
     <p>Derechos reservados - 2023</p>

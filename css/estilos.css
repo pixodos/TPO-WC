@@ -60,7 +60,7 @@ header {
 }
 
 .parrafo_index {
-    font-size: 50px;
+    font-size: 30px;
     color: #477979;
     text-align: center;
 }
@@ -82,7 +82,7 @@ h1 {
     margin: 20px;
     display: flex;
     justify-content: space-evenly;
-    
+
 }
 
 .cont-oficios {
@@ -134,7 +134,7 @@ footer p {
     width: 200px;
     display: flex;
     justify-content: space-around;
-        
+
 }
 
 
@@ -193,20 +193,55 @@ footer p {
 .contacto_prox {
     background-color: #f7f699;
     padding: 20px;
-    max-width: 600px;
+    max-width: 500px;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
 .parrafo_contacto {
-    font-size: 50px;
+    font-size: 20px;
     color: #797047;
-    text-align: center;
+    text-align: left;
 }
 
-@media screen and (max-width: 400px) {}
+form {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    gap: 10px;
+    max-width: 440px;
+    padding: 20px;
+    border: 1px solid #FFC55A;
+    border-radius: 5px;
+    background-color: #477979;
 
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 16px;
+}
+
+input,
+textarea {
+    padding: 5px;
+    font-size: 16px;
+    max-width: 400px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FFC55A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+
+}
 
 @media screen and (max-width: 600px) {
     .cont-naveg {
@@ -235,7 +270,7 @@ footer p {
     }
 
     .parrafo_index {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .seccion_of p {
@@ -258,4 +293,22 @@ footer p {
         margin: 10px;
     }
 
+    form {
+        max-width: 250px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    input,
+    textarea {
+        font-size: 14px;
+        max-width: 210px;
+
+    }
+
+    .contacto_prox {
+        max-width: 250px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
 }
